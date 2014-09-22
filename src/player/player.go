@@ -1,6 +1,6 @@
 package player
 
-const VERSION = "Default Go folding player"
+const VERSION = "v1.0.0"
 
 func BetRequest(state *GameState) int {
 	if IsPair(PLAYER) {
