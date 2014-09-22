@@ -10,6 +10,10 @@ func Showdown(state *GameState) {
     
 }
 
+func IsPair(c1 *Card, c2 *Card) bool{
+	return c1.Rank==c2.Rank;
+}
+
 func Version() string {
     return VERSION
 }
