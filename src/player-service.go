@@ -8,7 +8,7 @@ import (
 	"player"
 )
 
-const PORT = 4711
+const PORT = 5775
 
 func main() {
 	http.HandleFunc("/", handleRequest)
