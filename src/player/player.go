@@ -24,9 +24,20 @@ func IsPair(p Player) bool {
 }
 
 func Raise(state *GameState, value float) int {
-	return int(value*state.Pot);
+	// return int(value*state.Pot);
+	return (ceil((value*pot)/10))*10;
+}
+
+func HasAce(p Player) bool{
+	for i=0; i<len(p.HoleCards); i++
+		{
+			if Contains(p.HoleCards.Rank, "A") {
+				return true;
+			}
+		}
+	return false;
 }
 
 func Version() string {
-    return VERSION
+    return VERSION;
 }
