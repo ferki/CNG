@@ -3,7 +3,12 @@ package player
 const VERSION = "Default Go folding player"
 
 func BetRequest(state *GameState) int {
-    return 0
+	if IsPair(PLAYER) {
+		return Raise(0.67);
+	}
+    else {
+    	return 0;
+    }
 }
 
 func Showdown(state *GameState) {
